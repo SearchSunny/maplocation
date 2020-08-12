@@ -8,7 +8,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -33,10 +33,12 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     //搜索
-    api 'com.amap.api:search:latest.integration'
+    implementation 'com.amap.api:search:7.3.0'
     //定位
-    api 'com.amap.api:location:latest.integration'
+    implementation 'com.amap.api:location:4.9.0'
     //导航
-    api 'com.amap.api:navi-3dmap:latest.integration'
+    implementation 'com.amap.api:navi-3dmap:7.4.0_3dmap7.4.0'
     //高德地图-end
 }
+//引入配置(一定要放到最后一行，不然会报 android.compileSdkVersion is missing!异常)
+apply from: './bintray.gradle'

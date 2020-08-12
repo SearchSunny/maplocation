@@ -9,7 +9,7 @@ import com.amap.api.services.geocoder.GeocodeSearch;
 import com.amap.api.services.geocoder.RegeocodeResult;
 
 /**
- * 用以实现通过地理编码进行查询的功能
+ * 用以实现通过地理编码进行查询的功能(地址转坐标)
  */
 
 public class CustomSearchGeocode implements  GeocodeSearch.OnGeocodeSearchListener{
